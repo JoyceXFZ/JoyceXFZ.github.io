@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Joyce Zheng</title>
+  <title>Xiaofen Zheng - PhD Physics</title>
   <style>
     html, body {
       height: 100%;
@@ -15,23 +15,22 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       color: #222;
       background: #fff;
-      height: 100%;
       min-height: 100vh;
       box-sizing: border-box;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     main {
-      max-width: 420px;
+      max-width: 700px;
       width: 95%;
+      margin: 0 auto;
       padding: 2.5rem 1.5rem;
-      margin: 2rem auto;
-      background: #fafafa;
-      border-radius: 10px;
-      box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+    }
+
+    header {
       text-align: center;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
     }
 
     header h1 {
@@ -43,15 +42,16 @@
 
     .subtitle {
       color: #888;
-      font-size: 1em;
-      margin-bottom: 1.2em;
+      font-size: 1.1em;
+      margin-bottom: 1em;
     }
 
     .bio {
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
       color: #333;
       font-size: 1.08em;
       line-height: 1.6;
+      text-align: center;
     }
 
     .links {
@@ -59,6 +59,7 @@
       gap: 1.5em;
       justify-content: center;
       flex-wrap: wrap;
+      margin-bottom: 1em;
     }
 
     .links a {
@@ -74,8 +75,45 @@
       border-bottom: 1px solid #3572a5;
     }
 
+    section h2 {
+      font-size: 1.5em;
+      color: #222;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5em;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .publication {
+      margin-bottom: 1.8em;
+      padding: 1rem;
+      background: #fafafa;
+      border-left: 4px solid #3572a5;
+      border-radius: 4px;
+    }
+
+    .publication-title {
+      font-weight: 600;
+      font-size: 1.08em;
+      color: #222;
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+    }
+
+    .publication-authors {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 0.3em;
+    }
+
+    .publication-journal {
+      font-size: 0.95em;
+      color: #888;
+      font-style: italic;
+    }
+
     /* Responsive for mobile */
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
       main {
         padding: 1.5rem 0.5rem;
       }
@@ -87,28 +125,45 @@
       .links {
         gap: 1em;
       }
+
+      section h2 {
+        font-size: 1.3em;
+      }
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <h1>Joyce Zheng</h1>
-      <p class="subtitle">Developer & Problem Solver</p>
-    </header>
-    
-    <section class="bio">
-      <p>
-        I'm a full-stack developer passionate about building clean, user-friendly applications.
-        I enjoy exploring new technologies and solving complex problems through code.
+      <h1>Xiaofen Zheng</h1>
+      <p class="subtitle">PhD in Physics</p>
+      <p class="bio">
+        Research focus on financial engineering, systemic risk, and quantitative analysis.
       </p>
+      <div class="links">
+        <a href="https://scholar.google.com/citations?user=PATQZysAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://github.com/JoyceXFZ" target="_blank">GitHub</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+    </header>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      
+      <div class="publication">
+        <div class="publication-title">
+          Probabilistic approach to measuring early-warning signals of systemic contagion risk
+        </div>
+        <div class="publication-authors">
+          CH Hui, CF Lo, XF Zheng, T Fong
+        </div>
+        <div class="publication-journal">
+          International Journal of Financial Engineering, Vol. 5, No. 2, 1850010
+        </div>
+      </div>
+
     </section>
-    
-    <section class="links">
-      <a href="https://github.com/JoyceXFZ" target="_blank">GitHub</a>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="mailto:your.email@example.com">Email</a>
-    </section>
+
   </main>
 </body>
 </html>
