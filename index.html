@@ -47,12 +47,31 @@
       margin-bottom: 0.7em;
     }
 
+    .keywords {
+      text-align: left;
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 1em;
+      line-height: 1.6;
+    }
+
     .bio {
       margin-bottom: 1.2em;
       color: #333;
-      font-size: 1.02em;
+      font-size: 0.95em;
       line-height: 1.5;
-      text-align: center;
+      text-align: left;
+    }
+
+    .hidden-link {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      border-bottom: 1px dotted #ccc;
+    }
+
+    .hidden-link:hover {
+      border-bottom-color: #888;
     }
 
     .links {
@@ -159,8 +178,12 @@
   <main>
     <header>
       <h1>Joyce Zheng</h1>
+      <p class="subtitle">PhD in Physics</p>
+      <p class="keywords">
+        Quantitative Research • Data Science • Machine Learning • PhD in Physics
+      </p>
       <p class="bio">
-        Highly accomplished Theorectical Physics PhD and Data Scientist specializing in mathematical finance, with a rigorous academic foundation from CUHK (Advisor C.F. Lo https://www.phy.cuhk.edu.hk/~cflo/cflo.html) and USTB and cutting-edge expertise from MIT. Proven expertise in multi-asset financial modeling and high-stakes analytical problem-solving, with a track record of academic excellence including top 3% graduation and national honors.
+        Highly accomplished Theoretical Physics PhD and Data Scientist specializing in mathematical finance, with a rigorous academic foundation from CUHK (Advisor <a href="https://www.phy.cuhk.edu.hk/en-gb/people/academic-staff/prof-lo-chi-fai" target="_blank" class="hidden-link">C.F. Lo</a>)
       </p>
       <div class="links">
         <a href="https://scholar.google.com/citations?user=PATQZysAAAAJ&hl=en" target="_blank">Google Scholar</a>
