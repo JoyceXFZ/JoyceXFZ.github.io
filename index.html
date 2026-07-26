@@ -1,190 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyce Zheng - Developer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Joyce Zheng</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f9f9f9;
-        }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      height: 100%;
+      min-height: 100vh;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+    main {
+      max-width: 420px;
+      width: 95%;
+      padding: 2.5rem 1.5rem;
+      margin: 2rem auto;
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+      text-align: center;
+    }
 
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
+    header h1 {
+      margin: 0 0 0.2em 0;
+      font-size: 2.2em;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+    }
 
-        header p {
-            font-size: 1.1em;
-            opacity: 0.95;
-        }
+    .subtitle {
+      color: #888;
+      font-size: 1em;
+      margin-bottom: 1.2em;
+    }
 
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    .bio {
+      margin-bottom: 2em;
+      color: #333;
+      font-size: 1.08em;
+      line-height: 1.6;
+    }
 
-        section {
-            margin-bottom: 50px;
-        }
+    .links {
+      display: flex;
+      gap: 1.5em;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-        h2 {
-            color: #667eea;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-        }
+    .links a {
+      text-decoration: none;
+      color: #3572a5;
+      font-weight: 500;
+      border-bottom: 1px dotted #aaa;
+      transition: border-bottom 0.2s, color 0.2s;
+    }
 
-        p {
-            margin-bottom: 15px;
-            color: #555;
-        }
+    .links a:hover {
+      color: #1b497a;
+      border-bottom: 1px solid #3572a5;
+    }
 
-        .projects {
-            display: grid;
-            gap: 20px;
-        }
+    /* Responsive for mobile */
+    @media (max-width: 500px) {
+      main {
+        padding: 1.5rem 0.5rem;
+      }
 
-        .project-card {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+      header h1 {
+        font-size: 1.8em;
+      }
 
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .project-card h3 {
-            color: #667eea;
-            margin-bottom: 8px;
-        }
-
-        .project-card p {
-            margin-bottom: 12px;
-        }
-
-        a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: #764ba2;
-        }
-
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 50px;
-        }
-
-        .contact-links a {
-            color: #667eea;
-            margin: 0 15px;
-            display: inline-block;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-
-            h2 {
-                font-size: 1.4em;
-            }
-
-            .contact-links a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
+      .links {
+        gap: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-
+  <main>
     <header>
-        <h1>Joyce Zheng 👋</h1>
-        <p>Full-stack Developer | Problem Solver | Tech Enthusiast</p>
+      <h1>Joyce Zheng</h1>
+      <p class="subtitle">Developer & Problem Solver</p>
     </header>
-
-    <main>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm a passionate developer who loves building web applications and exploring new technologies. 
-                With a focus on clean code and user experience, I create solutions that make a difference.
-            </p>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>A brief description of what this project does and the technologies used.</p>
-                    <a href="#">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>A brief description of what this project does and the technologies used.</p>
-                    <a href="#">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project Three</h3>
-                    <p>A brief description of what this project does and the technologies used.</p>
-                    <a href="#">View Project →</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <p><strong>Frontend:</strong> HTML, CSS, JavaScript, React</p>
-            <p><strong>Backend:</strong> Node.js, Python, Git</p>
-            <p><strong>Tools:</strong> GitHub, VS Code, Terminal</p>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Connect with me:</p>
-        <div class="contact-links">
-            <a href="https://github.com/JoyceXFZ" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="mailto:your.email@example.com">Email</a>
-        </div>
-        <p style="margin-top: 20px; opacity: 0.7; font-size: 0.9em;">© 2026 Joyce Zheng. All rights reserved.</p>
-    </footer>
-
+    
+    <section class="bio">
+      <p>
+        I'm a full-stack developer passionate about building clean, user-friendly applications.
+        I enjoy exploring new technologies and solving complex problems through code.
+      </p>
+    </section>
+    
+    <section class="links">
+      <a href="https://github.com/JoyceXFZ" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="mailto:your.email@example.com">Email</a>
+    </section>
+  </main>
 </body>
 </html>
