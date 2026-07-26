@@ -102,6 +102,58 @@
       margin-bottom: 1rem;
     }
 
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0.35rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #eee;
+    }
+
+    .timeline-item {
+      margin-bottom: 1.2rem;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.95rem;
+      top: 0.4rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #3572a5;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px #3572a5;
+    }
+
+    .timeline-date {
+      font-size: 0.85em;
+      color: #999;
+      font-weight: 500;
+      margin-bottom: 0.2em;
+    }
+
+    .timeline-title {
+      font-weight: 600;
+      font-size: 1em;
+      color: #222;
+      margin-bottom: 0.1em;
+    }
+
+    .timeline-subtitle {
+      font-size: 0.9em;
+      color: #666;
+    }
+
     .publication {
       margin-bottom: 0.8em;
       padding: 0.75rem;
@@ -171,6 +223,18 @@
       section h2 {
         font-size: 1.25em;
       }
+
+      .timeline {
+        padding-left: 1.5rem;
+      }
+
+      .timeline::before {
+        left: 0.2rem;
+      }
+
+      .timeline-item::before {
+        left: -1.7rem;
+      }
     }
   </style>
 </head>
@@ -178,6 +242,7 @@
   <main>
     <header>
       <h1>Joyce Zheng</h1>
+      <p class="subtitle">PhD in Physics</p>
       <p class="keywords">
         Quantitative Research • Data Science • Machine Learning • PhD in Physics
       </p>
@@ -192,6 +257,52 @@
         <a href="mailto:xfzheng.cuhk At gmail Dot com">Email</a>
       </div>
     </header>
+
+    <section id="timeline">
+      <h2>Experience & Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2020 - Present</div>
+          <div class="timeline-title">Macro Rates Quant at FICC Trading</div>
+          <div class="timeline-subtitle">Bank of America Merrill Lynch</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2024 - 2025</div>
+          <div class="timeline-title">Data Science and Machine Learning Program</div>
+          <div class="timeline-subtitle">MIT IDSS (Certified)</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Feb 2019 - Jul 2020</div>
+          <div class="timeline-title">Quantitative Researcher</div>
+          <div class="timeline-subtitle">Shell Street Labs (BFAM Partners)</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Apr 2017 - Nov 2018</div>
+          <div class="timeline-title">Investment Analyst</div>
+          <div class="timeline-subtitle">Guotai Junan Assets Asia</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2012 - 2017</div>
+          <div class="timeline-title">PhD in Theoretical Physics</div>
+          <div class="timeline-subtitle">The Chinese University of Hong Kong</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2008 - 2012</div>
+          <div class="timeline-title">BSc in Physics</div>
+          <div class="timeline-subtitle">University of Science and Technology Beijing</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2014 - Feb 2014</div>
+          <div class="timeline-title">Researcher (Intern)</div>
+          <div class="timeline-subtitle">Hong Kong Monetary Authority</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2011</div>
+          <div class="timeline-title">Quantum Physics Summer School</div>
+          <div class="timeline-subtitle">Peking University</div>
+        </div>
+      </div>
+    </section>
 
     <section id="publications">
       <h2>Selected Publications</h2>
